@@ -24,16 +24,7 @@
             android:autoSizeMaxTextSize="45sp"
             android:autoSizeMinTextSize="25sp"
             android:layout_marginHorizontal="30dp"/>
-        <EditText
-            android:id="@+id/mobile"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:hint="Mobile"
-            android:autoSizeTextType="uniform"
-            android:autoSizeMaxTextSize="45sp"
-            android:autoSizeMinTextSize="25sp"
-            android:layout_marginHorizontal="30dp"/>
+
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
@@ -50,11 +41,11 @@
             android:layout_height="0dp"
             android:layout_weight="2"/>
         <Button
-            android:id="@+id/signup"
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="signup"
+            android:text="login"
             android:autoSizeTextType="uniform"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeMinTextSize="20sp"
