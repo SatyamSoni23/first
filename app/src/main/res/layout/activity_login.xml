@@ -51,5 +51,18 @@
             android:autoSizeMinTextSize="20sp"
             android:layout_marginHorizontal="50dp"
             />
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Reset Password"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="20sp"
+            android:layout_marginHorizontal="50dp"
+            android:textAlignment="center"
+            />
     </LinearLayout>
+
 </RelativeLayout>
