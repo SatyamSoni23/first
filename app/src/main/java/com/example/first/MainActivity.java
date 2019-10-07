@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     EditText email, password, mobile;
-    Button signup;
+    Button signup, toolbar;
     public static String strPassword, strEmail;
     long numMobile;
     private FirebaseAuth mAuth;
@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         signup = findViewById(R.id.signup);
         mobile = findViewById(R.id.mobile);
         mAuth = FirebaseAuth.getInstance();
+        toolbar = findViewById(R.id.toolbar);
+
+
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
                         });
             }
         });
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startToolbarActivity();
+            }
+        });
     }
     private void sendVerificationEmail(){
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -78,5 +87,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void startToolbarActivity(){
+        Intent intent = new Intent(this, toolbar.class);
+        startActivity(intent);
     }
 }
