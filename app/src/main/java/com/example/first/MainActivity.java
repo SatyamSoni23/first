@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         signup = findViewById(R.id.signup);
         mobile = findViewById(R.id.mobile);
         mAuth = FirebaseAuth.getInstance();
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.tool);
 
         Button btnCamera = findViewById(R.id.btnCamera);
         imageView = findViewById(R.id.imageView);

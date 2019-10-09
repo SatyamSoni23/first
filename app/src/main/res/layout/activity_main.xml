@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -76,7 +79,7 @@
             android:layout_marginHorizontal="50dp"
             />
         <Button
-            android:id="@+id/toolbar"
+            android:id="@+id/tool"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
